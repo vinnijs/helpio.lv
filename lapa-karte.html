@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Helpio_logo_melns.png">
+    <title>Helpio - karte.</title>
+    <link rel="stylesheet" href="stils.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap" >
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" >
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="content.js"></script>
+</head>
+
+<body>
+  <div>
+      <ul class="augsa">
+        <li class="helpio_augsa">
+          <a href="index.html">
+            <img src="helpio.jpg" alt="Logo" height="106" width="277">
+          </a>
+        </li>
+        <li class="vardarbiba">
+          <a href="lapa_vardarbiba.html">
+            <img src="vardarbiba_ista.png" alt="par vardarbibu" height="42" width="290">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div>
+      <!--KARTE-->
+      <div style="width: 90vw; height: 80vh; margin-left:auto; margin-right:auto;" id="mapContainer"></div>
+      <script type="text/javascript" src="karte.js"></script>
+      <!--END OF KARTE-->
+    </div>
+
+  </body>

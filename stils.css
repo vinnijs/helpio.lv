@@ -1,0 +1,576 @@
+
+/*AUGŠIŅA*/
+.augsa {
+            background-color: #3ddb86;
+            list-style-type: none;
+              margin: 0;
+              padding: 0;
+          }
+          .helpio_augsa {
+            display: inline-block;
+            padding: 15px;
+          }
+          .vardarbiba {
+            display: inline-block;
+            padding-right: 4%;
+            float: right;
+            padding-top: 46px;
+          }
+/* INDEX LAPA*/
+      .testa_poga {
+        font-weight: 800;
+        display: inline-block;
+        font-family: 'Manrope', sans-serif;
+        margin-top: 2%;
+        margin-left: 0px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 6%;
+        padding-right: 12%;
+        font-size: 28px;
+        text-align: left;
+        border-style: solid;
+        border-left: none;
+          border-width: 10px;
+          border-color: #4481f4;
+          border-bottom-right-radius: 110px;
+          border-top-right-radius: 110px;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+        }
+        .teksts_1 {
+          font-weight: 500;
+          font-family: 'Manrope', sans-serif;
+          display: inline-block;
+          font-size: 22px;
+        padding: 2%;
+        padding-left: 10%;
+        }
+        .poga_karte {
+          font-weight: 800;
+          font-family: 'Manrope', sans-serif;
+          font-size: 28px;
+        display: inline-block;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        padding-right: 6%;
+        padding-left: 12%;
+        text-align: right;
+        float: right;
+        margin: 0;
+        border-style: solid;
+        border-right: none;
+          border-width: 10px;
+          border-color: #f96736;
+          border-bottom-left-radius: 100px;
+          border-top-left-radius: 100px;
+        }
+        .teksts_2 {
+          font-weight: 500;
+          font-family: 'Manrope', sans-serif;
+          display: inline-block;
+          font-size: 22px;
+          text-align: right;
+          float: right;
+          padding:2%;
+          padding-right: 10%;
+        }
+        .pap_info {
+          padding-top: 3%;
+          font-weight: 800;
+          font-family: 'Manrope', sans-serif;
+         }
+        
+        .footeris {
+          background-color: #092f42;
+          color: white;
+          /*display: block;*/
+          
+          margin-bottom: 0;
+        }
+
+        .nummurs_bilde {
+          padding-left: 6%;
+          padding-right: 1%;
+          padding-top: 5%;
+          padding-bottom: 0;
+        }
+        .epasts_bilde {
+          padding-top: 6%;
+          padding-right: 3%;
+          padding-left: 3%;
+          float: right;
+        }
+        .lata_bilde {
+          padding-right: 5%;
+          padding-bottom: 4%;
+          float: right;
+        }
+        @media only screen and (max-device-width: 600px) {
+          .helpio_augsa {
+          padding: 25px;
+        }
+        .vardarbiba {
+          padding-right: 4%;
+          padding-top: 43px;
+        }
+        
+        .testa_poga {
+          margin-top: 5%;
+          padding-top: 8%;
+          padding-bottom: 8%;
+          padding-left: 10%;
+          padding-right: 16%;
+          font-size: 38px;
+            border-bottom-right-radius: 160px;
+            border-top-right-radius: 160px;
+          }
+          .teksts_1 {
+            font-size: 32px;
+          padding: 3%;
+          padding-left: 10%;
+          }
+          .poga_karte {
+            font-size: 38px;
+          padding-top: 9%;
+          padding-bottom: 9%;
+          padding-right: 11%;
+          padding-left: 17%;
+          margin: 0;
+            border-bottom-left-radius: 145px;
+            border-top-left-radius: 145px;
+          }
+          .teksts_2 {
+            display: inline-block;
+            font-size: 32px;
+            text-align: right;
+            padding: 3%;
+            padding-right: 12%;
+          }
+          .nummurs_bilde {
+            padding-left: 6%;
+            padding-right: 1%;
+            padding-top: 6%;
+            padding-bottom: 0;
+          }
+          .epasts_bilde {
+            padding-top: 7%;
+            padding-right: 3%;
+            padding-left: 3%;
+            float: right;
+          }
+          .lata_bilde {
+            padding-right: 5%;
+            padding-bottom: 4%;
+            float: right;
+          }
+      }
+
+  /*TESTAM*/
+  form{
+
+    font-family: 'Manrope', sans-serif;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  fieldset{
+    background-color: #D8EFFF;
+    border-color: #092f42;
+    border-width: 5px;
+    border-radius: 20px;
+    display:block;
+  }
+  legend{
+    background: #092f42;
+    border-radius: 10px;
+    margin-right: auto;
+    color: white;
+    font-weight: 600;
+    padding: 8px;
+  }
+  form p{
+    margin: 2%;
+  }
+  .opcija{
+    padding: 10px;
+    display: block;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .opcijawoh{
+      padding: 10px;
+      display: block;
+      width: 97%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  #aizpildi{
+    display:none;
+    background-color: #F96736;
+    border-radius: 10px;
+  }
+  #ivecumu{
+    display:none;
+    background-color: #F96736;
+    border-radius: 10px;
+  }
+  .opcija:hover{
+    background-color: #4481F4;
+  }
+  .kopa{
+    display: block;
+    text-align: center;
+  }
+  span input{
+    display:none;
+  }
+  .textfield{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form button{
+    font-family: 'Manrope', sans-serif;
+    background:  #092f42;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    padding: 8px;
+    border: none;
+    display: block;
+    margin-left: auto;
+  }
+   .submit{
+     background: #092f42;
+     border-radius: 10px;
+     color: white;
+     font-weight: 600;
+     padding: 8px;
+     border: none;
+     display: block;
+     margin-left: auto;
+   }
+  #b-1{
+    display: block;
+  }
+  #b0, #b1, #b2, #b3, #b4{
+    display:none;
+  }
+  .teksts_rez{
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    display: block;
+    font-size: 22px;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    background-color:#D8EFFF;
+  }
+  .links_rez{
+    color:#4481F4;
+  }
+  .breiki{
+    display:none;
+  }
+@media only screen and (max-device-width: 600px) {
+  .breiki{
+    display:inline;
+  }
+    /*.helpio_augsa {
+    padding: 25px;
+  }
+  .vardarbiba {
+    padding-right: 4%;
+    padding-top: 46px;
+  }*/
+  fieldset{
+      border-radius: 40px;
+      border-width: 8px;
+      font-size: 28px;
+  }
+  legend{
+      border-radius: 20px;
+      padding: 16px;
+      font-size: 35px;
+
+    }
+    form p{
+      margin: 2%;
+    }
+    form button{
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 32px;
+    }
+    .submit{
+       border-radius: 10px;
+       padding: 14px;
+       font-size: 32px;
+     }
+}
+
+/*REZULTATU LAPA*/
+
+.teksts_rez{
+         font-weight: 500;
+         font-family: 'Manrope', sans-serif;
+         display: block;
+         font-size: 22px;
+         padding: 2%;
+         padding-left: 5%;
+         padding-right: 5%;
+         text-align: center;
+         background-color:#D8EFFF;
+         border-radius: 20px;
+         margin: 3%;
+       }
+       .links_rez{
+         color:#4481F4;
+       }
+       @media only screen and (max-device-width: 600px) {
+          .teksts_rez{
+           font-size: 42px;
+           padding: 7%;
+           padding-left: 6%;
+           padding-right:6%;
+           border-radius: 60px;
+           margin: 2%;
+         }
+         .links_rez{
+           color:#4481F4;
+         }
+       }
+
+/*KARTE*/
+
+.bublis{
+        height:30vh;
+        width: 40vw;
+        overflow:auto;
+      }
+      @media only screen and (max-device-width: 600px){
+        .bublis{
+          height:25vh;
+          width: 45vw;
+          overflow:auto;
+        }
+        /*.helpio_augsa {
+          padding: 25px;
+        }
+        .vardarbiba {
+          padding-right: 4%;
+          padding-top: 43px;
+        }*/
+      }
+      h2{
+        font-family: 'Manrope', sans-serif;
+      }
+      p{
+        font-family: 'Manrope', sans-serif;
+      }
+      @media only screen and (max-device-width: 600px) {
+        h2{
+          font-size: 35px;
+          font-weight: 300;
+          line-height: 40px;
+        }
+        p{
+          font-size: 26px;
+          font-weight: 300;
+        }
+      }
+
+/*VARDARBIBAS LAPA*/
+
+.fiz_var {
+        float: left;
+        padding: 4%;
+        padding-left: 6%;
+        margin-top: 2%;
+        border-style: solid;
+        border-left: none;
+          border-width: 10px; 
+          border-color: #092f42;
+          border-bottom-right-radius: 170px;
+          border-top-right-radius: 170px;   
+      }
+      .emo_var {
+        float: right;
+        padding: 4%;
+        padding-left: 10%;
+        border-style: solid;
+        border-right: none;
+          border-width: 10px; 
+          border-color: #d8efff;
+          border-bottom-left-radius: 165px;
+          border-top-left-radius: 165px;  
+          margin-top: 16%;
+      }
+      .sek_var {
+        float: left;
+        margin-top: 10%;
+        padding: 5%;
+        padding-left: 6%;
+        border-style: solid;
+        border-left: none;
+          border-width: 10px; 
+          border-color: #f96736;
+          border-bottom-right-radius: 190px;
+          border-top-right-radius: 190px;   
+      }
+      .ats_nov {
+        float: right;
+        padding: 4%;
+        padding-left: 10%;
+        border-style: solid;
+        border-right: none;
+          border-width: 10px; 
+          border-color: #4481f4;
+          border-bottom-left-radius: 200px;
+          border-top-left-radius: 200px;  
+          margin-top: 16%;
+      }
+      .teksts_var{
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .virs_var {
+        font-weight: 800;
+        font-family: 'Manrope', sans-serif;
+        font-size: 30px;
+      }
+      @media only screen and (max-device-width: 600px) {
+        .fiz_var {
+          padding: 5%;
+          padding-left: 7%;
+          padding-right: 10%;
+          margin-top: 4%;
+          margin-right: 0;
+            border-bottom-right-radius: 290px;
+            border-top-right-radius: 290px;   
+        }
+        .emo_var {
+          padding: 5%;
+          padding-left: 15%;
+          margin-left: 0;
+            border-bottom-left-radius: 290px;
+            border-top-left-radius: 290px;  
+            margin-top: 4%;
+        }
+        .sek_var {
+          margin-top: 4%;
+          margin-right: 0;
+          padding: 5%;
+          padding-left: 7%;
+          padding-right: 10%;
+            border-bottom-right-radius: 290px;
+            border-top-right-radius: 290px;   
+        }
+        .ats_nov {
+          padding: 5%;
+          padding-left: 18%;
+          margin-left: 0;
+            border-bottom-left-radius: 340px;
+            border-top-left-radius: 340px;  
+            margin-top: 4%;
+        }
+        .teksts_var{
+          font-size: 30px;
+        }
+        .virs_var {
+          font-size: 40px;
+        }
+      }
+
+/*PAPILDUS INFO*/
+
+.soc_dien {
+        float: left;
+        padding: 4%;
+        padding-left: 6%;
+        padding-right: 8%;
+        margin-top: 2%;
+        border-style: solid;
+        border-left: none;
+          border-width: 10px; 
+          border-color: #d8efff;
+          border-bottom-right-radius: 190px;
+          border-top-right-radius: 190px;   
+      }
+      .virs {
+        font-weight: 800;
+        font-family: 'Manrope', sans-serif;
+        font-size: 30px;
+      }
+      .teksts {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .kriz_cent {
+        float: right;
+        padding: 4%;
+        padding-left: 8%;
+        border-style: solid;
+        border-right: none;
+          border-width: 10px; 
+          border-color: #f96736;
+          border-bottom-left-radius: 210px;
+          border-top-left-radius: 210px;  
+          margin-top: 16%;
+      }
+      .polic {
+        float: left;
+        margin-top: 10%;
+        padding: 5%;
+        padding-right: 9%;
+        padding-left: 6%;
+        border-style: solid;
+        border-left: none;
+          border-width: 10px; 
+          border-color: #092f42;
+          border-bottom-right-radius: 245px;
+          border-top-right-radius: 245px;   
+      }
+      @media only screen and (max-device-width: 600px) {
+        .soc_dien {
+          padding: 4%;
+          padding-left: 6%;
+          padding-right: 12%
+          margin-top: 4%;
+            border-bottom-right-radius: 280px;
+            border-top-right-radius: 280px;   
+        }
+        .virs {
+          font-size: 40px;
+        }
+        .teksts {
+          font-size: 30px;
+        }
+        .kriz_cent {
+          float: right;
+          margin-left: 0;
+          padding: 4%;
+          padding-right: 3%;
+          padding-left: 20%;
+            border-bottom-left-radius: 310px;
+            border-top-left-radius: 310px;  
+            margin-top: 4%;
+        }
+        .polic {
+          margin-top: 4%;
+          padding: 5%;
+          padding-left: 6%;
+          padding-right: 18%;
+            border-bottom-right-radius: 370px;
+            border-top-right-radius: 370px;   
+        }
+      }

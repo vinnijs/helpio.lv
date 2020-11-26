@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <meta charset="utf-8">
+      <link rel="icon" href="Helpio_logo_melns.png">
+      <title>Helpio - tests.</title>
+      <!--<link rel="stylesheet" href="stils.css">-->
+      <link rel="stylesheet" href="stils.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+  		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap" >
+      <script type="text/javascript" src="tests.js"></script>
+      
+  </head>
+	<body>
+		<div>
+			<ul class="augsa">
+				<li class="helpio_augsa">
+					<a href="index.html">
+						<img src="helpio.jpg" alt="Logo" height="106" width="277">
+					</a>
+				</li>
+				<li class="vardarbiba">
+					<a href="lapa_vardarbiba.html">
+						<img src="vardarbiba_ista.png" alt="par vardarbibu" height="42" width="290">
+					</a>
+				</li>
+			</ul>
+		</div>
+    <p></p>
+		<form id="forma" action="rezultats.php" method="post"> <!-- action="qwer.php" -->
+			<fieldset id="b-1">
+				<legend>Tavi dati</legend>
+				<span class="kopa">
+					<p class="opcijawoh">
+						Tavas atbildes ir pilnīgi anonīmas un neidenficējamas, bet tiek izmantotas statistikai.
+					</p>
+					<p class="opcijawoh">
+						Tests paredzēts nepilngadīgām personām.
+					</p>
+				</span>
+				<button type="button" onclick="shownext(-1)">Piekrītu</button>
+			</fieldset>
+			<span id="b0">
+        <fieldset >
+          <legend>Atzīmē savas dzīvesvietas reģionu<br clasa="breiki">un ievadi savu vecumu gados!</legend>
+          <span class="kopa">
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="R" name="regions" value="Rīga, Rīgas reģions">
+              <label for="R">Rīga, Rīgas reģions</label>
+            </p>
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="V" name="regions" value="Vidzeme">
+              <label for="V">Vidzeme</label>
+            </p>
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="L" name="regions" value="Latgale">
+              <label for="L">Latgale</label>
+            </p>
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="K" name="regions" value="Kurzeme">
+              <label for="K">Kurzeme</label>
+            </p>
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="Z" name="regions" value="Zemgale">
+              <label for="Z">Zemgale</label>
+            </p>
+          </span>
+        </fieldset>
+        <fieldset>
+          <legend>Norādi savu vecumu<br clasa="breiki">pilnos gados!</legend>
+          <span class="kopa">
+            <p class="opcijawoh">
+              <input class="textfield" id="vecums" type="number" name="vecums" min="1" max="20">
+            </p>
+          </span>
+        </fieldset>
+        <fieldset>
+          <legend>Norādi savu dzimumu!</legend>
+          <span class="kopa">
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="W" name="dzimums" value="Vīrietis">
+              <label for="W">Vīrietis</label>
+            </p>
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="M" name="dzimums" value="Sieviete">
+              <label for="M">Sieviete</label>
+            </p>
+            <p class="opcija" onclick="dochangeradio(this)">
+              <input type="checkbox" id="O" name="dzimums" value="Cits">
+              <label for="O">Cits</label>
+            </p>
+          </span>
+          <button type="button" onclick="validate()">Tālāk</button>
+        </fieldset>
+        <p id="aizpildi" class="opcijawoh">Aizpildi visus lauciņus!</p>
+        <p id="ivecumu" class="opcijawoh">Ievadi derīgu vecumu (1-20 gadi)!</p>
+      </span>
+			<fieldset id="b1">
+				<legend>Atzīmē darbības, kuras<br clasa="breiki">esi piedzīvojis savā dzīvē!</legend>
+				<span class="kopa">
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="1" value="Pēršana">
+						<label for="1">Pēršana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="2" value="Sišana">
+						<label for="2">Sišana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="3" value="Purināšana">
+						<label for="3">Purināšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="4" value="Kniebšana vai griešana">
+						<label for="4">Kniebšana vai griešana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="5" value="Grūstīšana vai mešana">
+						<label for="5">Grūstīšana vai mešana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="6" value="Priekšmetu sviešana">
+						<label for="6">Priekšmetu sviešana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="7" value="Žņaugšana">
+						<label for="7">Žņaugšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="8" value="Dedzināšana">
+						<label for="8">Dedzināšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="9" value="Neļaušana gulēt vai iemigt">
+						<label for="9">Neļaušana gulēt vai iemigt</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="10" value="Ieslēgšana un ieslodzīšana">
+						<label for="10">Ieslēgšana un ieslodzīšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="11" value="Piespiedu ēdināšana">
+						<label for="11">Piespiedu ēdināšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="12" value="Aprobežojums apmeklēt tualeti">
+						<label for="12">Aprobežojums apmeklēt tualeti</label>
+					</p>
+				</span>
+				<button type="button" onclick="shownext(1)">Tālāk</button>
+			</fieldset>
+			<fieldset id="b2">
+				<legend>Atzīmē darbības, kuras<br clasa="breiki">esi piedzīvojis savā dzīvē!</legend>
+				<span class="kopa">
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="13" value="Kliegšana vai lamāšana">
+						<label for="13">Kliegšana vai lamāšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="14" value="Draudēšana">
+						<label for="14">Draudēšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="15" value="Ņirgāšanās, pazemošana, publiska kritizēšana">
+						<label for="15">Ņirgāšanās, pazemošana, publiska kritizēšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="16" value="Atraidīšana un ignorēšana">
+						<label for="16">Atraidīšana un ignorēšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="17" value="Apvainošana, apsaukāšana, vainošana par lietām, ar kurām neesi saistīts">
+						<label for="17">Apvainošana, apsaukāšana, vainošana par lietām, ar kurām neesi saistīts</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="18" value="Apzināta morālo vērtību degradēšana – iesaistīšana zagšanā, ubagošanā u.c.">
+						<label for="18">Apzināta morālo vērtību degradēšana – iesaistīšana zagšanā, ubagošanā u.c.</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="19" value="Nevienlīdzīga attieksme – ko viens bērns drīkst, to cits nedrīkst">
+						<label for="19">Nevienlīdzīga attieksme – ko viens bērns drīkst, to cits nedrīkst</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="20" value="Negatīva vecāku aprunāšana tavā klātbūtnē">
+						<label for="20">Negatīva vecāku aprunāšana tavā klātbūtnē</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="21" value="Smagi konflikti, vardarbība starp taviem tuviniekiem, ko tu redzi vai dzirdi">
+						<label for="21">Smagi konflikti, vardarbība starp taviem tuviniekiem, ko tu redzi vai dzirdi</label>
+					</p>
+				</span>
+				<button type="button" onclick="shownext(2)">Tālāk</button>
+			</fieldset>
+			<fieldset id="b3">
+				<legend>Atzīmē darbības, kuras<br clasa="breiki">esi piedzīvojis savā dzīvē!</legend>
+				<span class="kopa">
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="22" value="Dzimumakts pret tavu gribu">
+						<label for="22">Dzimumakts pret tavu gribu</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="23" value="Tava ķermeņa bieža aizskaršana pret tavu gribu">
+						<label for="23">Tava ķermeņa bieža aizskaršana pret tavu gribu</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="24" value="Tava privātuma pārkāpšana">
+						<label for="24">Tava privātuma pārkāpšana</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="25" value="Seksuālā eksplautācija">
+						<label for="25">Seksuālā eksplautācija</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="26" value="Esi bijis pakļauts citu seksualitātei">
+						<label for="26">Esi bijis pakļauts citu seksualitātei</label>
+					</p>
+				</span>
+				<button type="button" onclick="shownext(3)">Tālāk</button>
+			</fieldset>
+			<fieldset id="b4">
+				<legend>Atzīmē darbības, kuras<br clasa="breiki">esi piedzīvojis savā dzīvē!</legend>
+				<span class="kopa">
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="27" value="Ilgstoša pamešana vienatnē no pieaugušo puses">
+						<label for="27">Ilgstoša pamešana vienatnē no pieaugušo puses</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="28" value="Tev nav vecumam un veselībai atbilstošas pārtikas, apģērba, dzīves vides">
+						<label for="28">Tev nav vecumam un veselībai atbilstošas pārtikas, apģērba, dzīves vides</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="29" value="Tev netiek nodrošināta atbilstoša un savlaicīga medicīniskā palīdzība">
+						<label for="29">Tev netiek nodrošināta atbilstoša un savlaicīga medicīniskā palīdzība</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="30" value="Vecāki ir vienaldzīgi pret tavām emocionālajām vajadzībām">
+						<label for="30">Vecāki ir vienaldzīgi pret tavām emocionālajām vajadzībām</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="31" value="Tu esi izolēts no normāliem, vecumam atbilstošiem sociālajiem kontaktiem">
+						<label for="31">Tu esi izolēts no normāliem, vecumam atbilstošiem sociālajiem kontaktiem</label>
+					</p>
+					<p class="opcija" onclick="dochange(this)">
+						<input type="checkbox" name="32" value="Tev nav nepieciešamo mācību materiālu un piederumu">
+						<label for="32">Tev nav nepieciešamo mācību materiālu un piederumu</label>
+					</p>
+				</span>
+				<input type="submit" class="submit" value="Iesniegt">
+			</fieldset>
+		</form>
+	</body>
+</html>
